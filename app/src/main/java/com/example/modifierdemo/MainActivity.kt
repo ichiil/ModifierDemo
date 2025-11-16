@@ -26,6 +26,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.res.painterResource
 
 class MainActivity : ComponentActivity() {
@@ -76,6 +77,7 @@ fun DemoScreen(modifier: Modifier = Modifier) {
             Modifier
                 .padding(10.dp)
                 .width(210.dp)
+                .rotate(180F)
                 .clip(shape = RoundedCornerShape(30.dp))
         )
     }
